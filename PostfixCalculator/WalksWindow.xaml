@@ -1,0 +1,24 @@
+﻿<Window x:Class="PostfixCalculator.WalksWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PostfixCalculator"
+        mc:Ignorable="d"
+        Title="WalksWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.501,0.507">
+        <ScrollViewer Background="LightBlue" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled" Width="182" HorizontalAlignment="Left" Margin="105,96,0,130">
+            <StackPanel Name="ContainerStack" Width="118" Height="208" Orientation="Vertical">
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Background="LightBlue" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled" Width="182" HorizontalAlignment="Left" Margin="517,96,0,130">
+            <StackPanel x:Name="ContainerQueue" Width="118" Height="208">
+            </StackPanel>
+        </ScrollViewer>
+        <Label Content="Stack" FontSize="25" HorizontalAlignment="Left" Margin="162,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Queue" FontSize="25" HorizontalAlignment="Left" Margin="566,33,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Proccess" IsReadOnly="True" Background="LightBlue" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Height="45" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Proccess" FontSize="18" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="StepBtn" Content="Step Button" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Click="StepBtn_Click" Width="159"/>
+    </Grid>
+</Window>
